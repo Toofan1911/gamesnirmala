@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game On! | Registration Complete</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Outfit:wght@300;400;600&family=Press+Start+2P&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        .success-container {
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            background: radial-gradient(circle at 50% 50%, #1a1a2e 0%, var(--bg-dark) 70%);
+            padding: 2rem;
+        }
+
+        .success-icon {
+            font-size: 5rem;
+            margin-bottom: 2rem;
+            animation: bounce 2s infinite;
+        }
+
+        h1 {
+            font-family: var(--font-heading);
+            font-size: 3rem;
+            color: var(--accent-green);
+            margin-bottom: 1rem;
+            text-shadow: 0 0 20px var(--accent-green);
+        }
+
+        p {
+            font-size: 1.5rem;
+            margin-bottom: 2rem;
+            max-width: 600px;
+        }
+
+        @keyframes bounce {
+
+            0%,
+            100% {
+                transform: translateY(0);
+            }
+
+            50% {
+                transform: translateY(-20px);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="success-container">
+        <div class="success-icon">🚀</div>
+        <h1>GAME ON!</h1>
+        <p>Your stats have been loaded. Get ready for the ultimate experience.</p>
+        <p style="font-size: 1rem; opacity: 0.7; margin-bottom: 3rem;">(An email draft has been opened for you to
+            confirm your stats)</p>
+        <a href="index.html" class="btn">RETURN TO HOME BASE</a>
+    </div>
+</body>
+
+</html>

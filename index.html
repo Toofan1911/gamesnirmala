@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Level Up The talent | Games Concert Event</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Outfit:wght@300;400;600&family=Press+Start+2P&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+
+    <!-- EmailJS SDK -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script type="text/javascript">
+        (function () {
+            // Initialize EmailJS with Public Key (will be loaded from config but needs init here or in script)
+            // We will initialize in script.js using CONFIG values
+        })();
+    </script>
+</head>
+
+<body>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-content">
+            <h1 class="glitch" data-text="LEVEL UP THE MUSIC">LEVEL UP THE FUN</h1>
+            <p class="subtitle">THE ULTIMATE GAMES EXPERIENCE</p>
+            <p class="description">Where TALENT meet STRATERGY. <t></t> Join the high-score party!</p>
+            <a href="#register" class="btn cta-btn">JOIN THE GAME</a>
+        </div>
+        <div class="hero-visuals">
+            <!-- Decorative elements will be added via CSS/JS or SVGs here -->
+            <div class="floating-icon controller">🎮</div>
+            <div class="floating-icon note">🎵</div>
+            <div class="floating-icon joystick">🕹️</div>
+        </div>
+    </section>
+
+    <!-- Event Section -->
+    <section class="event-details" id="about">
+        <h2>EVENT STATS</h2>
+        <div class="cards-container">
+            <div class="card">
+                <div class="icon">👾</div>
+                <h3>GAMING</h3>
+                <p>Live tournaments & retro arcades.</p>
+            </div>
+            <div class="card">
+                <div class="icon">🎧</div>
+                <h3>MUSIC</h3>
+                <p>Top DJs spinning 8-bit remixes.</p>
+            </div>
+            <div class="card">
+                <div class="icon">🏆</div>
+                <h3>PRIZES</h3>
+                <p>Win exclusive gear & merch.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Registration Section -->
+    <section class="register" id="register">
+        <div class="form-container">
+            <h2>ENTER THE ARENA</h2>
+            <form id="gameForm" action="https://sheetdb.io/api/v1/10ydbflsc9eg7" method="post">
+                <div class="input-group">
+                    <label for="name">PLAYER NAME</label>
+                    <input type="text" id="data[name]" name="data[name]" placeholder="Enter your gamertag..." required>
+                </div>
+                <div class="input-group">
+                    <label for="email">EMAIL ADDRESS</label>
+                    <input type="email" id="data[email]" name="data[email]" placeholder="player@example.com" required>
+                </div>
+                <div class="input-group">
+                    <label for="mobile">CONTACT LINK</label>
+                    <input type="tel" id="data[mobile]" name="data[mobile]" placeholder="+1 234 567 890" required>
+                </div>
+                <div class="input-group">
+                    <label for="class">GUILD / CLASS</label>
+                    <select id="data[class]" name="data[class]" required>
+                        <option value="">Select your class...</option>
+                        <option value="BSC CS">BSC CS</option>
+                        <option value="BCA A">BCA A</option>
+                        <option value="BCA B">BCA B</option>
+                        <option value="BCA C">BCA C</option>
+
+                    </select>
+                </div>
+                <button type="submit" class="btn submit-btn">START GAME</button>
+            </form>
+        </div>
+        
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>GAME ON. MUSIC LOUD. MEMORIES FOREVER.</p>
+        <p class="copyright">&copy; 2024 Level Up Events. All rights reserved.</p>
+    </footer>
+
+    <script src="config.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
